@@ -1,0 +1,102 @@
+body {
+    background-image: url(images/14212555_5436846.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#canvas1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 600px;
+    background: white;
+}
+
+.wid{
+    background-color: white;
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: fit-content;
+    box-shadow: inset;
+    padding: 1em;
+    display: none;
+    h2{
+        color: blue;
+        font-family: monospace;
+        font-size: 50px;
+        text-align: center;
+        margin: 0;
+    }
+
+}
+
+.gameOver{
+    #stats{
+        height: fit-content;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3{
+            color: green;
+            display: flex;
+            align-items: center;
+            padding-left: 0.75em;
+            font-family: cursive;
+            margin-bottom: 0.2em;
+        }
+
+        h3 + h3{
+            color: red;
+        }
+
+        h3 + h3 + h3{
+            background-color: brown;
+            border-radius: 15px;
+            border:  1px inset brown;
+            color: wheat;
+            width: fit-content;
+            padding: 0.5em 1.5em;
+            align-self: center;
+            cursor: pointer;
+        }
+    }
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+}
+
+.menu label{
+    font-family: monospace;
+}
+
+.menu button{
+    width: 50%;
+    background-color: red;
+    color: white;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.menu input{
+    border: 1px dashed green;
+    padding: 1em 0;
+    font-size: 1.5em;
+}
+
+.menu input:focus-visible{
+    outline: none;
+}
+@media screen and (max-width: 800px) {
+   
+}

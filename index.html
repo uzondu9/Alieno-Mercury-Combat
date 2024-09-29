@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onbeforeunload="displayMenu(this)">
+    <canvas id="canvas1"></canvas>
+    <div class="menu wid">
+        <h2>Menu</h2>
+        <label for="targetScore">Enter Target Score</label>
+        <input type="text" class="targetScore" id="targetScore">
+        <button id='enter'> Enter</button>
+    </div>
+    <div class="gameOver wid">
+        <h2 id="caption">You Lose</h2>
+        <div id="stats">
+            <h3 id="numOfKills"></p>
+            <h3 id="target"></p>
+            <h3 id="Score" onclick="reload(this)"> Replay</h2>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
