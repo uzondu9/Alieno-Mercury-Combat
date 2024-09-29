@@ -200,8 +200,8 @@ class Defender {
         this.chosenDefender = chosenDefender;
     }
     draw() {
-        ctx.fillStyle = 'white';
         ctx.font = '30px Monospace';
+        ctx.fillStyle = 'white';
         ctx.fillText(Math.floor(this.health), this.x + 15, this.y + 25);
         if (this.chosenDefender === 1){
             ctx.drawImage(def1, this.frameX * this.spriteWidth, 0, this.spriteWidth,
@@ -346,9 +346,9 @@ function chooseDef() {
     ctx.strokeStyle = card1stroke;
     ctx.strokeRect(card1.x, card1.y, card1.width, card1.height);
     ctx.drawImage(def1, 0, 0, 128, 128, 10, 5, 128 / 2, 128 / 2);
+    ctx.font = '15px cursive';
     ctx.fillStyle = 'green';
     ctx.fillText('50', 40, 30);
-    ctx.font = '15px cursive';
     
     ctx.fillStyle = 'rgba(0, 0, 0,0.2)';
     ctx.fillRect(card2.x, card2.y, card2.width, card2.height);
@@ -367,7 +367,7 @@ function chooseDef() {
     ctx.fillStyle = 'green';
     ctx.fillText('100', 200, 30);
     ctx.font = '15px cursive';
-}
+} 
 
 //floating Messages
 const floatingMessages = [];
