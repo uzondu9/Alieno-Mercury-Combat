@@ -254,8 +254,8 @@ class Defender {
             const gunShot = new Audio();
             gunShot.src = 'images/gunAudio.mp3';
             gunShot.play();
-            if(audio.isPaused){
-                audio.play();
+            if(gunShot.isPaused){
+                gunShot.play();
             }
             projectiles.push(new Projectiles(this.x + 70, this.y + 40));
             this.shootNow = false;
