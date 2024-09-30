@@ -250,7 +250,13 @@ class Defender {
             if (frame % 50 === 0) this.shootNow = true; 
         }
 
-        if (this.shooting && this.shootNow) {
+       if (this.shooting && this.shootNow) {
+            const gunShot = new Audio();
+            gunShot.src = 'images/gunAudio.mp3';
+            gunShot.play();
+            if(audio.isPaused){
+                audio.play();
+            }
             projectiles.push(new Projectiles(this.x + 70, this.y + 40));
             this.shootNow = false;
         }
